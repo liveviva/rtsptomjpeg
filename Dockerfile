@@ -21,7 +21,7 @@ COPY --from=builder /usr/local/share/man/ /usr/local/share/man
 COPY stream.sh /usr/bin/stream.sh
 RUN chmod +x /usr/bin/stream.sh
 COPY ffserver.conf-armhf /etc/ffserver.conf
-ENV RTSP_URL rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream
+ENV RTSP_URL rtsp://admin:CTZYYC@192.168.2.3:554/h264/ch2/main/av_stream
 ENV FFMPEG_INPUT_OPTS  ""
 ENV FFMPEG_OUTPUT_OPTS  ""
 ENV FFSERVER_LOG_LEVEL "error"
